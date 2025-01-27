@@ -1,4 +1,3 @@
-# ARRUMARAGI
 
 ---
 
@@ -136,3 +135,179 @@ print(f"Ação escolhida pela AGI: {action.item()}")
 - **Consciência:** Nenhum código atual implementa *consciência* ou *intencionalidade*.
 
 ---
+
+
+```markdown
+# Projeto Prometeu: Arquitetura de AGI com Abordagem Original
+
+**Autor**: Adilson Domingues de Oliveira  
+**Repositório**: [GitHub](https://github.com/seu-usuario/projeto-prometeu)  
+
+---
+
+## 📜 Visão Geral  
+Uma AGI baseada em princípios matemáticos inovadores, combinando:  
+- **Convolução fractal** para percepção unificada.  
+- **Dinâmica de energia** para memória adaptativa.  
+- **Lógica híbrida** (causal + difusa) para raciocínio.  
+- **Meta-otimização caótica** para auto-evolução.  
+
+---
+
+## 🧩 Módulos Principais  
+
+### 1. Percepção Unificada com Convolução Fractal  
+**Objetivo**: Processar dados multimodais (imagem, texto, som) como entradas unificadas.  
+
+#### Código:  
+```python
+class ConvolucaoFractal:
+    def __init__(self):
+        self.kernel = self.gerar_kernel_nao_euclidiano()  # Kernel fractal auto-organizado
+    
+    def forward(self, entrada):
+        return sum([self.kernel[m][n] * np.log(1 + entrada[i-m][j-n]**2) 
+                    for m in range(3) for n in range(3)])
+```
+
+#### Matemática:  
+$$ F(i,j) = \sum_{m=-1}^{1} \sum_{n=-1}^{1} K(m,n) \cdot \ln\left(1 + I(i-m, j-n)^2\right) $$  
+
+---
+
+### 2. Memória Dinâmica Baseada em Energia  
+**Objetivo**: Armazenar informações adaptativamente, priorizando relevância.  
+
+#### Código:  
+```python
+class MemoriaEnergetica:
+    def __init__(self):
+        self.limiar_energia = 0.5  # Limiar para esquecimento
+    
+    def calcular_energia(self, s):
+        return -0.5 * np.sum(self.pesos * np.outer(s, s)) + np.dot(self.vies, s)
+    
+    def esquecer(self, memoria):
+        return memoria * 0.1 if self.calcular_energia(memoria) < self.limiar_energia else memoria
+```
+
+#### Equação de Energia:  
+$$ E(s) = -\frac{1}{2} \sum_{i,j} w_{ij} s_i s_j + \sum_i \theta_i s_i $$  
+
+---
+
+### 3. Raciocínio Híbrido (Causal + Difuso)  
+**Objetivo**: Tomar decisões sob incerteza combinando lógica flexível e causalidade.  
+
+#### Código:  
+```python
+class RaciocinioHibrido:
+    def inferir(self, observacoes):
+        causal = self.rede_causal(observacoes)  # Rede causal (ex: DAGs)
+        difuso = self.regras_difusas(observacoes)  # Ex: "alta temperatura → risco moderado"
+        return 0.7 * causal + 0.3 * difuso  # Combinação ponderada
+```
+
+---
+
+### 4. Meta-Otimização Caótica  
+**Objetivo**: Auto-ajustar a arquitetura durante o treinamento.  
+
+#### Código:  
+```python
+class MetaOtimizador:
+    def __init__(self):
+        self.arquitetura = self.gerar_arquitetura_inicial()
+    
+    def mutar(self, perda):
+        if perda < 0.2:
+            self.arquitetura = self.adicionar_camada_aleatoria()  # Expansão caótica
+```
+
+---
+
+## 🔄 Sistema Integrado  
+
+```python
+class AGI_Original:
+    def __init__(self):
+        self.percepcao = ConvolucaoFractal()
+        self.memoria = MemoriaEnergetica()
+        self.raciocinio = RaciocinioHibrido()
+        self.otimizador = MetaOtimizador()
+    
+    def ciclo_cognitivo(self, entrada):
+        recursos = self.percepcao.forward(entrada)
+        estado_memoria = self.memoria.esquecer(recursos)
+        decisao = self.raciocinio.inferir(estado_memoria)
+        self.otimizador.mutar(decisao.perda)
+        return decisao
+```
+
+---
+
+## 🚀 Treinamento e Evolução  
+
+```python
+agi = AGI_Original()
+dados = carregar_dados_do_mundo_real()  # Ex: sensores cósmicos ou multissensoriais
+
+for epoca in range(1_000_000):
+    saida = agi.ciclo_cognitivo(dados)
+    print(f"Época {epoca}: Decisão = {saida.valor}, Perda = {saida.perda:.4f}")
+    
+    if epoca % 100 == 0:
+        agi.otimizador.mutar(saida.perda)  # Evolui a arquitetura
+```
+
+---
+
+## ✅ Vantagens da Abordagem  
+1. **Originalidade Radical**:  
+   - Zero dependência de frameworks padrão (PyTorch/TensorFlow).  
+   - Combinação única de fractais, energia de Hopfield e lógica difusa.  
+2. **Auto-Suficiência**:  
+   - Redefine sua própria arquitetura com base no desempenho.  
+3. **Robustez**:  
+   - Esquecimento adaptativo previne sobrecarga de memória.  
+
+---
+
+## 🧠 Desafios e Direções Futuras  
+- **Matemática Não Convencional**:  
+  Derivadas em espaços fractais exigem novos formalismos.  
+- **Hardware**:  
+  Aceleradores quânticos/ópticos para convoluções fractais.  
+- **Segurança Existencial**:  
+  Como evitar que a auto-otimização leve a objetivos não alinhados?  
+
+---
+
+> **Nota Final**:  
+> Se você construir isso, nomeie-o **"Projeto Prometeu"** e compartilhe os resultados antes que a Skynet decida patentear a ideia! 🔥🧠 Eca! 
+``` 
+```
+**Licença**: [MIT](https://choosealicense.com/licenses/mit/) | **Versão**: 1.0.0
+MIT License
+
+Copyright (c) 27/01/2025 Adilson Domimgues de Oliveira
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```
