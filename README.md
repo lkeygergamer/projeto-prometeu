@@ -143,7 +143,7 @@ print(f"Ação escolhida pela AGI: {action.item()}")
 # Projeto Prometeu: Arquitetura de AGI com Abordagem Original
 
 **Autor**: Adilson Domingues de Oliveira  
-**Repositório**: [GitHub](https://github.com/seu-usuario/projeto-prometeu)  
+**Repositório**: [GitHub](https://github.com/lkeygergamer/projeto-prometeu)  
 
 ---
 
