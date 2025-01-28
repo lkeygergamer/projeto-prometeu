@@ -1,5 +1,8 @@
 
 ---
+### **Projeto Conceitual de AGI com Abordagem Original**
+Visão Geral
+Este projeto propõe uma AGI baseada em princípios matemáticos inovadores, evitando dependência de frameworks convencionais. A arquitetura combina conceitos fractais, dinâmica de energia e lógica híbrida para criar um sistema autônomo e auto-otimizável.
 
 ### **Estrutura do Código (Simplificada)**
 ```python
