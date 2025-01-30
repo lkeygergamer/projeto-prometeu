@@ -1,4 +1,7 @@
 
+![faculdade-uniasselvi](https://github.com/user-attachments/assets/2fbeb85f-2cad-42a5-bb33-1d4b80f3bb51)
+
+
 ---
 ### **Projeto Conceitual de AGI com Abordagem Original**
 Visão Geral
